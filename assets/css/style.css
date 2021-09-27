@@ -269,9 +269,7 @@ li a{
     border: 1px solid #ccc;
 }
 
-.form__input+.form__input{
-    padding: 10px;
-}
+
 #footer{
 
 }
