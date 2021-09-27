@@ -23,12 +23,12 @@
     <div id="main">
         <div id="header">
             <ul class="nav">
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="#">
+                    <a href="">
                         More
                         <span class="material-icons-outlined">
                             arrow_drop_down
@@ -42,6 +42,7 @@
                     </ul>
                 </li>
                 <span class=" header-search material-icons-outlined">search</span>
+                <span class="header-menu material-icons-outlined">menu</span>
             </ul>
             
         </div>
@@ -113,21 +114,30 @@
                 <h2 >CONTACT</h2>
                 <i>Fan? Drop a note!</i>
                 <div class="contact__info">
+                    
                     <div class=" info location">
-                        <b><span class="info__icons material-icons-outlined">location_on</span>Chicago, US</b><br>
-                        <b><span class="info__icons material-icons-outlined">phone</span>Phone: +00 151515</b><br>
-                        <b><span class="info__icons material-icons-outlined">email</span> Email: mail@mail.com</b>
+                        <span class="info__icons material-icons-outlined">location_on</span>Chicago, US<br>
+                        <span class="info__icons material-icons-outlined">phone</span>Phone: +00 151515<br>
+                        <span class="info__icons material-icons-outlined">email</span> Email: mail@mail.com
                     </div>
                     <div class="info form">
-                        <input type="text" placeholder="Name" name="name" id="" class="form__input">
-                        <input type="text" placeholder="Email" name="email" id="" class="form__input">
-                        <input type="text" placeholder="Messenger" name="message" id="" class="form__input">
+                        <input type="text" placeholder="Name" required r name="Name" id="" class="form__input name">
+                        <input type="email" placeholder="Email" required name="Email" id="" class="form__input email">
+                        <input type="text" placeholder="Message" required name="Message" id="" class="form__input message">
+                        <button type="submit" class="btn-send">SEND</button>
                     </div>
                 </div>
 
             </div>
-        <div id="footer">
 
+        <img src="./assets/img/map.jpg" style="width: 100%;" alt="">
+        <div id="footer">
+            <span class="footer__icons material-icons-outlined">language</span>
+            <span class="footer__icons material-icons-outlined">shopping_cart</span>
+            <span class="footer__icons material-icons-outlined">thumb_up</span>
+            <span class="footer__icons material-icons-outlined">manage_accounts</span>
+            <span class="footer__icons material-icons-outlined">help_outline</span>
+            <span class="footer__icons material-icons-outlined">logout</span>
         </div>
     </div>
 </body>

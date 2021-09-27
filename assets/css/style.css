@@ -239,7 +239,6 @@ li a{
 .contact{
     width: 100%;
     max-width: 800px;
-    height: 800px;
     margin: 0 auto;
     padding: 64px 16px;
    
@@ -248,15 +247,19 @@ li a{
 .contact__info{
     padding: 32px 0;
     width: 100%;
+    display: flex;
+    
 }
 .info{
     width: 50%;
-    float: left;
+    
+    
 }
+
 .info>b{
     font-size: 18px;
     font-weight: 400;
-    display: inline-block;
+   
 }
 .info__icons{
     padding: 0 10px;
@@ -268,11 +271,83 @@ li a{
     padding: 8px;
     border: 1px solid #ccc;
 }
-
-
-#footer{
-
+.name,.email{
+    width: 49%;
+}
+.email{
+    float: right;
+}
+.message{
+    margin-top: 8px;
+    width: 100%;
+}
+.btn-send{
+    float: right;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin: 16px 0;
+}
+.btn-send:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
 }
 
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+.footer__icons{
+    padding: 2px;
+    font-weight:400;
+    line-height: 1.5    ;
+}
+.footer__icons:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.header-menu{
+    display: none;
 
+}
+@media (max-width:583px){
+    .contact__info,.ticket,.band__member {
+        flex-wrap: wrap;
+    }
+    .form__input,.info,.ticket__buy,.member{
+        width: 100%;
+        margin: 8px auto;
+    }
+    .form {
+        margin  : 16px auto;
+    }
+    .nav li{
+        display: block;
+    }
+    .header-search {
+        display: none;
+    }
+    #header{
+        overflow: hidden;
+    }
+    .header-menu{
+        position: absolute;
+        display:block;
+        float: right;
+        color: #fff;
+        padding: 12px 24px;
+        font-size: 22px;
+        top: 0;
+        right: 0;
+    }
+    .header-menu:hover{
+        background-color: #ccc;
+        color: #000;
+        cursor: pointer;
 
+    }
+    
+} 
